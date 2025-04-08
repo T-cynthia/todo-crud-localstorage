@@ -1,13 +1,16 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f0f0f5;
+    background: #782f38;
     margin: 0;
     padding: 20px;
   }
   
   .container {
-    max-width: 800px;
+    max-width: 500px;
     margin: auto;
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 10px;
   }
   
   form {
@@ -17,28 +20,50 @@ body {
     padding: 20px;
     border-radius: 8px;
   }
-  
+
   form input, form select, form textarea, form button {
     padding: 10px;
     border-radius: 4px;
     border: 1px solid #ccc;
+    cursor: pointer;
   }
   
   form button {
-    background-color: #007BFF;
+    background-color: rgb(224, 27, 96) ;
     color: white;
     border: none;
+    cursor: pointer;
+  }
+
+  #clear-all{
+    background-color:rgb(239, 72, 86);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
   }
   
   .controls {
+   
     margin-top: 10px;
     text-align: right;
   }
+
+  /* .tasks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+  } */
   
-  .task-list {
+    .task-list {
     margin-top: 20px;
     display: grid;
-    gap: 15px;
+    gap: 15px; 
+    position: relative;
+    left: 5px;
   }
   
   .task-card {
@@ -60,4 +85,5 @@ body {
     margin-right: 10px;
     padding: 5px 10px;
   }
+  
   
